@@ -14,24 +14,24 @@ B = ('\x1b[1;96m')
 P = ('\x1b[1;97m')
 
 # Logo
-___logo___ = (f"""{H} ___ ___ ___ __  __ ___ _   _ __  __
-{H}| _ \ _ \ __|  \/  |_ _| | | |  \/  |
-{B}|  _/   / _|| |\/| || || |_| | |\/| |
-{B}|_| |_|_\___|_|  |_|___|\___/|_|  |_|
-{K}[{P}•{K}]{P}——————————————————————————————
-{H}[{P}>{H}]{P} Au : alfin
-{H}[{P}>{H}]{P} Ig : @alfin
-{H}[{P}>{H}]{P} Fb : fb.com/alpinni
-{K}[{P}•{K}]{P}——————————————————————————————
+___logo___ = (f"""{H} 
+{H}▐▀▀▀▀████▀▀▀██▀▀███▀▀█▀▀▀▀▀▀▌
+{B}▐█──███▀──▄──▀█─▀█▀─███──▀█▄▌
+{B}▐▄▄▄▄▄▄██▄▄▄█████▄████▄▄▄▄▄▄▌
+{K}[{P}•{K}]{P}—————————————————————————
+{H}[{U}>{H}]{U} Au : alfin
+{H}[{B}>{H}]{K} Ig : @alfinofc1
+{H}[{K}>{H}]{B} Fb : Alfin ni
+{K}[{P}•{K}]{P}—————————————————————————
 """)
 # Login Cookie
 def ___login___():
     os.system('clear')
     print(___logo___)
-    print(f"{B}[{P}•{B}]{P} Masukan Cookie Instagram, Sebaiknya Jangan Gunakan Akun Yang Baru Di Buat, Kalau Anda Belum Mengetahui Cara Mendapatkan Cookie Instagram Ketik {M}[{P}Open{M}]{P}\n")
-    ___cookie = input(f"{H}[{P}?{H}]{P} Cookie :{K} ")
+    print(f"{B}[{P}•{B}]{H} Masukan Cookie Instagram, Sebaiknya Jangan Gunakan Akun Yang Baru Di Buat, Kalau Anda Belum Mengetahui Cara Mendapatkan Cookie Instagram Ketik {M}[{P}Open{M}]{P}\n")
+    ___cookie = input(f"{H}[{P}?{H}]{U} Cookie :{K} ")
     if ___cookie in ['open', 'Open', 'OPEN']:
-        print(f"{K}[{P}!{K}]{P} Anda Akan Diarahkan Ke Youtube, Silahkan Ikuti Cara Untuk Mendapatkan Cookie...");sleep(3);os.system('xdg-open https://youtu.be/u17ZQgSs3aY');exit()
+        print(f"{K}[{P}!{K}]{K} Anda Akan Diarahkan Ke WHATSAPP, Silahkan Ikuti Cara Untuk Mendapatkan Cookie...");sleep(3);os.system('xdg-open https://api.whatsapp.com/send/?phone=6289690719275&text&app_absent=0');exit()
     elif ___cookie in ['', ' ']:
         exit(f"{P}[{M}!{P}]{M} Jangan Kosong")
     else:
@@ -42,7 +42,7 @@ def ___login___():
         except (AttributeError, KeyError):
             exit(f"{P}[{M}!{P}]{M} Pastikan Cookie Sudah Benar")
         except (ConnectionError):
-            exit(f"{P}[{K}!{P}]{K} Koneksi Error")
+            exit(f"{P}[{K}!{P}]{U} Koneksi Error")
 # Follow Cookie
 def ___follow___():
     try:
@@ -55,7 +55,7 @@ def ___follow___():
             ___follow = ses.post('https://www.instagram.com/web/friendships/5398218083/follow/',headers = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '0','content-type': 'application/x-www-form-urlencoded','cookie': 'ig_did=F839D900-5ECC-4392-BCAD-5CBD51FB9228; mid=YChlyQALAAHp2POOp2lK_-ciAGlM; ig_nrcb=1; csrftoken=W4fsZmCjUjFms6XmKl1OAjg8v81jZt3r; ds_user_id=45872034997; sessionid='+___session.group(1),'origin': 'https://www.instagram.com','referer': 'https://www.instagram.com/','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36','x-csrftoken': 'W4fsZmCjUjFms6XmKl1OAjg8v81jZt3r','x-ig-app-id': '5398218083','x-ig-www-claim': 'hmac.AR0OQY4Gw4kczWNvfVOhvoljSINqB2u2gB-utUQ1MF0Mkrzu','x-instagram-ajax': '95bfef5dd816','x-requested-with': 'XMLHttpRequest'}).text # Jangan Di Ubah!
             ___komen = ses.post('https://www.instagram.com/web/comments/2734317205115382629/add/',headers = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '0','content-type': 'application/x-www-form-urlencoded','cookie': 'ig_did=F839D900-5ECC-4392-BCAD-5CBD51FB9228; mid=YChlyQALAAHp2POOp2lK_-ciAGlM; ig_nrcb=1; csrftoken=W4fsZmCjUjFms6XmKl1OAjg8v81jZt3r; ds_user_id=45872034997; sessionid='+___session.group(1),'origin': 'https://www.instagram.com','referer': 'https://www.instagram.com/','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36','x-csrftoken': 'W4fsZmCjUjFms6XmKl1OAjg8v81jZt3r','x-ig-app-id': '5398218083','x-ig-www-claim': 'hmac.AR0OQY4Gw4kczWNvfVOhvoljSINqB2u2gB-utUQ1MF0Mkrzu','x-instagram-ajax': '95bfef5dd816','x-requested-with': 'XMLHttpRequest'}, data = ___data).text #Jangan Di ubah!
             if '"status":"ok"' in str(___follow):
-                print(f"{H}[{P}!{H}]{P} Login Berhasil");___menu___()
+                print(f"{H}[{P}!{H}]{K} Login Berhasil");___menu___()
             else:
                 print(f"{P}[{M}!{P}]{M} Cookie Invalid");sleep(3);os.system('rm -rf Data/coki.txt');___login___()
     except Exception as e:
@@ -66,26 +66,26 @@ def ___menu___():
         os.system('clear')
         print(___logo___)
         ___roz = requests.get(f'https://i.instagram.com/api/v1/users/{open("Data/user.txt","r").read()}/info/', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['user']
-        print(f"{B}[{P}*{B}]{P} Welcome :{K} {___roz['full_name']}")
-        print(f"{B}[{P}*{B}]{P} User :{K} {___roz['username']}")
-        print(f"{B}[{P}*{B}]{P} Follower :{K} {___roz['follower_count']}\n")
+        print(f"{B}[{P}*{B}]{U} Welcome :{K} {___roz['full_name']}")
+        print(f"{B}[{P}*{B}]{U} User :{K} {___roz['username']}")
+        print(f"{B}[{P}*{B}]{U} Follower :{K} {___roz['follower_count']}\n")
     except (IOError):
         print(f"{P}[{M}!{P}]{M} Cookie Invalid");sleep(3);___login___()
     except (KeyError):
         print(f"{P}[{M}!{P}]{M} Cookie Invalid");os.system('rm -rf Data/coki.txt && rm -rf Data/user.txt');sleep(3);___login___()
     except (IOError):
-        exit(f"{P}[{K}!{P}]{K} Koneksi Error")
-    print(f"{B}[{P}1{B}]{P} Dump Username Dari Mengikuti")
-    print(f"{B}[{P}2{B}]{P} Dump Username Dari Pengikut")
-    print(f"{B}[{P}3{B}]{P} Dump Username Dari Activity")
-    print(f"{B}[{P}4{B}]{P} Dump Username Dari Beranda")
-    print(f"{B}[{P}5{B}]{P} Dump Username Dari Hastag")
-    print(f"{B}[{P}6{B}]{P} Dump Username Dari Search")
-    print(f"{B}[{P}7{B}]{P} Dump Username Dari Query")
-    print(f"{B}[{P}8{B}]{P} Dump User Dari Email")
-    print(f"{B}[{P}9{B}]{P} Mulai Crack {P}[{H}Fast{P}]{H}")
-    print(f"{B}[{P}0{B}]{P} Lihat Hasil Crack")
-    print(f"{B}[{P}A{B}]{P} Keluar {P}[{M}Exit{P}]{M}\n")
+        exit(f"{P}[{K}!{P}]{M} Koneksi Error")
+    print(f"{B}[{P}1{B}]{B} Dump Username Dari Mengikuti")
+    print(f"{B}[{P}2{B}]{B} Dump Username Dari Pengikut")
+    print(f"{B}[{P}3{B}]{B} Dump Username Dari Activity")
+    print(f"{B}[{P}4{B}]{B} Dump Username Dari Beranda")
+    print(f"{B}[{P}5{B}]{B} Dump Username Dari Hastag")
+    print(f"{B}[{P}6{B}]{B} Dump Username Dari Search")
+    print(f"{B}[{P}7{B}]{B} Dump Username Dari Query")
+    print(f"{B}[{P}8{B}]{B} Dump User Dari Email")
+    print(f"{B}[{P}9{B}]{B} Mulai Crack {P}[{H}Fast{P}]{H}")
+    print(f"{B}[{P}0{B}]{B} Lihat Hasil Crack")
+    print(f"{B}[{P}A{B}]{B} Keluar {P}[{M}Exit{P}]{M}\n")
     ___pilih = input(f"{H}[{P}?{H}]{P} Pilih :{K} ")
     if ___pilih in ['1','01']:
         ___mengikuti___()
@@ -107,14 +107,14 @@ def ___menu___():
         ___proxy___()
     elif ___pilih in ['0','00']:
         try:
-            print(f"\n{H}[{P}1{H}]{P} Lihat Hasil Ok")
-            print(f"{H}[{P}2{H}]{P} Lihat Hasil Cp")
-            print(f"{H}[{P}3{H}]{P} Kembali\n")
-            ___hasil = input(f"{B}[{P}?{B}]{P} Pilih :{K} ")
+            print(f"\n{H}[{P}1{H}]{H} Lihat Hasil Ok")
+            print(f"{H}[{P}2{H}]{H} Lihat Hasil Cp")
+            print(f"{H}[{P}3{H}]{H} Kembali\n")
+            ___hasil = input(f"{B}[{P}?{B}]{B} Pilih :{K} ")
             if ___hasil in ['1','01']:
-                print(f"{P} ");os.system('cat Results/Ok.txt')
+                print(f"{K} ");os.system('cat Results/Ok.txt')
             elif ___hasil in ['2','02']:
-                print(f"{P} ");os.system('cat Results/Cp.txt')
+                print(f"{K} ");os.system('cat Results/Cp.txt')
             elif ___hasil in ['3','03']:
                 ___menu___()
             else:

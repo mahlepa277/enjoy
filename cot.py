@@ -95,10 +95,10 @@ def ___menu___():
         os.system('clear')
         print(___logo___)
         ___pin = requests.get(f'https://i.instagram.com/api/v1/users/{open("Data/user.txt","r").read()}/info/', headers = {'user-agent': 'Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)', 'cookie': open('Data/coki.txt','r').read()}).json()['user']
-        print(f"{B}{H}╔═══════════════════════════════════╗")
-        print(f"{B}╠═{P}▶{B}{U} Welcome :{K} {___pin['full_name']}")
-        print(f"{B}╠═{P}▶{B}]{U} User :{K} {___pin['username']}")
-        print(f"{B}╠═{P}▶{B}]{U} Follower :{K} {___pin['follower_count']}")
+        print(f"{B}{H}╔═══════════════════════════════════╗")        
+        print(f"{H}╠═{P}▶{B}{U} Welcome :{K} {___pin['full_name']}.                   {H}║")
+        print(f"{H}╠═{P}▶{B}{U} User :{K} {___pin['username']}.              {H}║")
+        print(f"{H}╠═{P}▶{B}{U} Follower :{K} {___pin['follower_count']}.                 {H}║")
         print(f"{B}{H}╠═══════════════════════════════════╝\n") 
     except (IOError):
         print(f"{P}[{M}!{P}]{M} ʙʟᴏᴍ ᴍᴀsᴜᴋᴀɴ ᴄᴏᴏᴋɪᴇ");sleep(3);___login___()
@@ -149,12 +149,12 @@ def ___menu___():
             elif ___hasil in ['3','03']:
                 ___menu___()
             else:
-                exit(f"{P}[{M}!{P}]{M} Wrong Input")
+                exit(f"{P}[{M}!{P}]{M} menghapus cooki")
         except:pass
     elif ___pilih in ['a','A']:
         print(f"{P}[{K}!{P}]{K} ᴩʀᴏsᴇs ʜᴀᴩᴜs ᴄᴏᴏᴋɪᴇ...");os.system('rm -rf Data/coki.txt && rm -rf Data/user.txt');exit()
     else:
-        exit(f"{P}[{K}!{P}]{M} Wrong Input")
+        exit(f"{P}[{K}!{P}]{M} ᴊᴀɴɢᴀɴ ᴋᴏsᴏɴɢ")
 # Dump Mengikuti
 def ___mengikuti___():
     try:

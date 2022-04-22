@@ -5,7 +5,7 @@
     $ pkg install python
     $ pip install requests
     $ pip install futures
-    $ git clone https://github.com/akuhantu/ig
-    $ cd ig
+    $ git clone https://github.com/mahlepa277/ig2
+    $ cd ig2
     $ git pull
     $ python cot.py
